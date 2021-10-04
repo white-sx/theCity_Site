@@ -1,0 +1,329 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    overflow-x: hidden;
+    background-color: #000;
+}
+
+.container-all {
+    max-width: 85%;
+    height: 1600px;
+    margin: 0 auto;
+}
+
+header {
+    width: 100%;
+    height: 60%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    overflow: hidden;
+}
+
+header .content-title {
+    position: absolute;
+    z-index: 5;
+}
+
+header .title {
+    font-family: 'Anton', sans-serif;
+    text-transform: uppercase;
+    font-size: 8em;
+    letter-spacing: 20px;
+    color: #fff;
+}
+
+.subtitle {
+    font-family: 'Lato', sans-serif;
+    text-transform: uppercase;
+    font-size: 1.5em;
+    letter-spacing: 2px;
+    color: #fff;
+}
+
+header button {
+    width: 250px;
+    height: 80px;
+    border-radius: 40px;
+    border: none;
+    padding: 20px 30px;
+    margin-top: 40px;
+    font-size: 1.4em;
+    text-transform: uppercase;
+    font-family: 'Lato', sans-serif;
+    font-weight: 700;
+    color: #fff;
+    background-color: #a6a6a6;
+}
+
+header .image-back {
+    position: absolute;
+    background-image: url('../img/header.jpg');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    filter: blur(4px);
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+}
+
+.menu-icon-mobile {
+    display: none;
+}
+
+.content-menu {
+    position: absolute;
+    width: 600px;
+    height: 80px;
+    right: 0;
+    top: 0;
+    z-index: 5;
+}
+
+.content-menu nav {
+    width: 100%;
+    height: 100%;
+}
+
+.content-menu ul {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    list-style: none;
+    text-transform: uppercase;
+    justify-content: space-evenly;
+    align-items: center;
+    font-family: 'Lato', sans-serif;
+    font-weight: 700;
+    letter-spacing: 2px;
+    font-size: 1.2em;
+}
+
+.content-menu ul li a {
+    margin-right: 15px;
+    color: #fff;
+    text-decoration: none;
+}
+
+.content-menu ul li a:hover {
+    border-bottom: 5px solid #fff;
+}
+
+.container-all main {
+    width: 100%;
+    height: max-content;
+    background-color: #132240;
+}
+
+.container-all main .content-text {
+    width: 100%;
+    height: 55%;
+    background-color: #a6a6a6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 30px 20px;
+}
+
+.container-all main .content-text h2 {
+    font-size: 3em;
+    text-transform: uppercase;
+    color: #fff;
+    margin-bottom: 40px;
+    font-weight: 400;
+    letter-spacing: 4px;
+    font-family: 'Lato', sans-serif;
+}
+
+.container-all main .content-text p {
+    font-size: 1.5em;
+    line-height: 36px;
+    font-weight: 300;
+    color: #fff;
+    width: 80%;
+    font-family: 'Lato', sans-serif;
+    word-break: break-word;
+}
+
+.container-all main .content-image {
+    width: 100%;
+    height: 45%;
+    padding: 50px 0;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.images {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+    height: 70%;
+    flex-wrap: wrap;
+}
+
+.container-all main .content-image img {
+    width: 150px;
+    height: 300px;
+    margin-left: 20px;
+    border: 2px solid #fff;
+    border-radius: 5px;
+}
+
+.container-all main .content-image img:nth-child(odd) {
+    margin-top: -150px;
+}
+
+main .content-image h2 {
+    font-size: 4em;
+    font-weight: 300;
+    letter-spacing: 4px;
+    margin-top: 50px;
+    margin-bottom: 150px;
+}
+
+.container-all footer {
+    width: 100%;
+    height: 100px;
+    color: #fff;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.container-all footer .txt {
+    font-size: 1.2em;
+    width: 300px;
+}
+
+.container-all footer .logos {
+    width: 300px;
+    display: flex;
+    margin-right: 20px;
+}
+
+.container-all footer .logos a img {
+    width: 50px;
+    margin-right: 30px;
+}
+
+@media (max-width:1333px) {
+    .container-all main .content-image img:nth-child(odd) {
+        margin-top: 0;
+    }
+    .container-all main .content-image img {
+        margin: 0px 20px 20px 20px;
+        flex-grow: 2;
+    }
+}
+
+@media (max-width:768px) {
+    header .title {
+        font-size: 5em;
+        letter-spacing: 10px;
+    }
+    .subtitle {
+        font-size: 1.2em;
+        letter-spacing: 1px;
+    }
+    header button {
+        width: 155px;
+        height: 40px;
+        padding: 10px 20px;
+        font-size: .9em;
+    }
+    .content-menu {
+        width: 300px;
+        right: 20px;
+    }
+    .content-menu ul {
+        font-size: .9em;
+    }
+    .container-all main .content-text h2 {
+        font-size: 2em;
+        letter-spacing: 2px;
+    }
+    .container-all main .content-text p {
+        font-size: 1em;
+        line-height: 24px;
+    }
+    main .content-image h2 {
+        font-size: 2em;
+        letter-spacing: 2px;
+        margin-bottom: 80px;
+    }
+    .container-all main .content-image img {
+        width: 80px;
+        height: 160px;
+        margin-left: 20px;
+        border: 2px solid #fff;
+        border-radius: 5px;
+    }
+    .container-all footer .txt {
+        font-size: 1em;
+        width: 200px;
+    }
+    .container-all footer .logos {
+        width: 200px;
+        display: flex;
+        justify-content: center;
+    }
+    .container-all footer .logos a img {
+        width: 30px;
+        margin-right: 15px;
+    }
+}
+
+@media (max-width:425px) {
+    .container-all {
+        max-width: 100%;
+        height: 1600px;
+        margin: 0 auto;
+    }
+    header {
+        height: 35%;
+    }
+    .content-menu .menu ul {
+        display: none;
+    }
+    .menu-icon-mobile {
+        display: block;
+        position: absolute;
+        right: 0;
+        top: 10px;
+    }
+    .menu-icon-mobile img {
+        width: 50px;
+    }
+    .container-all footer .txt {
+        font-size: .9em;
+    }
+    .container-all footer .logos {
+        width: 200px;
+        display: flex;
+        justify-content: center;
+        margin: 0;
+    }
+    .container-all footer .logos a img {
+        width: 25px;
+        margin-right: 10px;
+    }
+    .container-all main .content-image img {
+        width: 285px;
+        height: 285px;
+    }
+}
